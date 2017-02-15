@@ -1,5 +1,5 @@
 {
-  "name": "mastodon",
+  "name": "ardipithecus",
   "scripts": {
     "test": "mocha --require ./spec/javascript/setup.js --compilers js:babel-register ./spec/javascript/components/*.test.jsx",
     "storybook": "start-storybook -p 9001 -c storybook",

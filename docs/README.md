@@ -3,6 +3,8 @@ Index
 
 **Mastodon** is a free, open-source GNU social-compatible social network server. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Anyone can run Mastodon and participate in the social network seamlessly.
 
+**Ardipithecus** is a fork of Mastodon which maintains the same backend but introduces a new UI and features.
+
 ### Using Mastodon
 - [Frequently Asked Questions](Using-Mastodon/FAQ.md)
 - [List of Mastodon instances](Using-Mastodon/List-of-Mastodon-instances.md)
@@ -32,3 +34,7 @@ Index
 
 - [List of used specs and RFCs for the federation](Specs-and-RFCs-used.md)
 - [Extensions of the above protocols](Extensions.md)
+
+### Ardipithecus
+
+- [Differences between Ardipithecus and Mastodon](Differences.md)

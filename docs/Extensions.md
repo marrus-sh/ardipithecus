@@ -1,7 +1,7 @@
 Protocol extensions
 ===================
 
-Some functionality in Mastodon required some additions to the protocols to enable seamless federation of those features:
+Some functionality in Mastodon/Ardipithecus required some additions to the protocols to enable seamless federation of those features:
 
 ### Federation of blocks/unblocks
 

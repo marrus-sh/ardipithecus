@@ -1,5 +1,9 @@
-Mastodon
-========
+Ardipithecus | Mastodon
+=======================
+
+<!--
+
+Travis support for Ardipithecus not here yet!!
 
 [![Build Status](http://img.shields.io/travis/tootsuite/mastodon.svg)][travis]
 [![Code Climate](https://img.shields.io/codeclimate/github/tootsuite/mastodon.svg)][code_climate]
@@ -7,24 +11,22 @@ Mastodon
 [travis]: https://travis-ci.org/tootsuite/mastodon
 [code_climate]: https://codeclimate.com/github/tootsuite/mastodon
 
-Mastodon is a free, open-source social network server. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Anyone can run Mastodon and participate in the social network seamlessly.
+-->
 
-An alternative implementation of the GNU social project. Based on ActivityStreams, Webfinger, PubsubHubbub and Salmon.
+**Ardipithecus** is a fork of **[Mastodon](https://github.com/tootsuite/mastodon)**, a GNU Social-compatible microblogging server.
+It aims to maintain the Mastodon backend and API while presenting a modified user experience.
+Anyone can run Ardipithecus and participate in the social network seamlessly.
 
-Click on the screenshot to watch a demo of the UI:
+Because it is a fork with nontrivial modifications, Ardipithecus will run slightly behind Mastodon development at all times.
+The philosophy of Ardipithecus is to provide stable, well-documented updates at regular intevals, which means occasionally introducing a delay before incorporating upstream changes.
 
-[![Screenshot](https://i.imgur.com/T2q5V65.png)][youtube_demo]
-
-[youtube_demo]: https://www.youtube.com/watch?v=YO1jQ8_rAMU
-
-Focus of the project on a clean REST API and a good user interface. Ruby on Rails is used for the back-end, while React.js and Redux are used for the dynamic front-end. A static front-end for public resources (profiles and statuses) is also provided.
-
-If you would like, you can [support the development of this project on Patreon][patreon]. Alternatively, you can donate to this BTC address: `17j2g7vpgHhLuXhN4bueZFCvdxxieyRVWd`
+Ardipithecus uses the Mastodon backend, so the best way to encourage the introduction of new features is to [support the development of Mastodon on Patreon][patreon].
 
 [patreon]: https://www.patreon.com/user?u=619786
 
 ## Resources
 
+- [Differences between Ardipithecus and Mastodon](docs/Ardipithecus/Differences.md)
 - [List of Mastodon instances](docs/Using-Mastodon/List-of-Mastodon-instances.md)
 - [Use this tool to find Twitter friends on Mastodon](https://mastodon-bridge.herokuapp.com)
 - [API overview](docs/Using-the-API/API.md)

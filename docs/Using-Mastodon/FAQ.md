@@ -1,6 +1,25 @@
 Frequently Asked Questions
 ==========================
 
+Ardipithecus FAQs
+-----------------
+
+#### What is Ardipithecus?
+
+Ardipithecus is a genus of extinct hominine; and is an early ancestor of modern humans.
+
+#### Why the name Ardipithecus?
+
+Ardipithecus aims to bring a more personal touch to the Mastodon user experience, and as Mastodon is named after a prehistoric animal, it only made sense to name Ardipithecus after a prehistoric person.
+Also, there's an album titled _Ardipithecus_ by Willow, and it's a cool word.
+
+#### What makes Ardipithecus different from Mastodon?
+
+See [this file](../Ardipithecus/Differences.md).
+
+Mastodon FAQs
+-------------
+
 #### What is a Mastodon?
 
 A prehistoric animal, predecessor of the mammoth.

@@ -1,7 +1,7 @@
 Development guide
 =================
 
-**Don't use Docker to do development**. It's a quick way to get Mastodon running in production, it's **really really inconvenient for development**. Normally in Rails development environment you get hot reloading of backend code and on-the-fly compilation of assets like JS and CSS, but you lose those benefits by compiling a Docker image. If you want to contribute to Mastodon, it is worth it to simply set up a proper development environment.
+**Don't use Docker to do development**. It's a quick way to get Mastodon running in production, it's **really really inconvenient for development**. Normally in Rails development environment you get hot reloading of backend code and on-the-fly compilation of assets like JS and CSS, but you lose those benefits by compiling a Docker image. If you want to contribute to Ardipithecus, it is worth it to simply set up a proper development environment.
 
 In fact, all you need is described in the [production guide](Production-guide.md), **with the following exceptions**. You **don't** need:
 
@@ -17,11 +17,11 @@ The command to install project dependencies does not require any flags, i.e. sim
 
 By default the development environment wants to connect to a `mastodon_development` database on localhost using your user/ident to login to Postgres (i.e. not a md5 password)
 
-You can run Mastodon with:
+You can run Ardipithecus with:
 
     rails s
 
-And open `http://localhost:3000` in your browser. Background jobs run inline (aka synchronously) in the development environment, so you don't need to run a Sidekiq process. 
+And open `http://localhost:3000` in your browser. Background jobs run inline (aka synchronously) in the development environment, so you don't need to run a Sidekiq process.
 
 By default, your development environment will have an admin account created for you to use - the email address will be `admin@YOURDOMAIN` (e.g. admin@localhost:3000) and the password will be `mastodonadmin`.
 

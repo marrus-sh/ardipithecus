@@ -1,6 +1,6 @@
 {
-	"name": "Mastodon",
-	"description": "Mastodon is a free, open-source social network server.",
+	"name": "Ardipithecus",
+	"description": "Ardipithecus is a fork of Mastodon, a free, open-source social network server.",
 	"icons": [
 		{
 			"src": "\/android-chrome-192x192.png",

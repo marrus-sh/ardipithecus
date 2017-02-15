@@ -1,7 +1,7 @@
 Administration guide
 ====================
 
-So, you have a working Mastodon instance... now what?
+So, you have a working Ardipithecus instance... now what?
 
 ## Turning into an admin
 

@@ -82,14 +82,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu/trusty64"
 
   config.vm.provider :virtualbox do |vb|
-    vb.name = "mastodon"
+    vb.name = "ardipithecus"
     vb.customize ["modifyvm", :id, "--memory", "1024"]
   end
 
-  config.vm.hostname = "mastodon.dev"
+  config.vm.hostname = "ardipithecus.dev"
 
   # This uses the vagrant-hostsupdater plugin, and lets you
-  # access the development site at http://mastodon.dev.
+  # access the development site at http://ardipithecus.dev.
   # To install:
   #   $ vagrant plugin install hostsupdater
   if defined?(VagrantPlugins::HostsUpdater)
