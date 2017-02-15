@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+/*  GLOBAL RULES  */
+
+*[title]:not([title=""]):not(a) {
+  border-bottom: dotted currentColor black;
+  cursor: help;
+}
+
+@supports (text-decoration-style: dotted) {
+  *[title]:not([title=""]):not(a) {
+    border: none;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+  }
+  abbr {
+    border: none;
+  }
+}
+
+*:lang(en) {
+  quotes: "‘" "’" "“" "”";
+}
+
+/*  PAGE LAYOUT  */
+
+html, body {
+  text-align: justify;
+  quotes: "‘" "’" "“" "”";
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+/*  SECTIONING  */
+
+aside {
+  text-align: right;
+}
+
+header {
+  text-transform: uppercase;
+}
+
+nav {
+  text-align: left;
+}
+
+footer {
+  text-align: right;
+  blockquote > &:last-child::before {
+    content: "– ";
+  }
+}
+
+/*  TABLES  */
+
+table {
+  text-align: left;
+}
+
+thead {
+  text-align: center;
+}
+
+th {
+  text-align: center;
+  text-decoration: underline;
+}
+
+/*  LISTS  */
+
+ul {
+  list-style-type: circle;
+  li & {
+    list-style-type: square;
+    li & {
+      list-style-type: disc;
+      li & {
+        list-style-type: circle;
+        li & {
+          list-style-type: square;
+        }
+      }
+    }
+  }
+}
+
+ol {
+  list-style-type: upper-roman;
+  li & {
+    list-style-type: decimal-leading-zero;
+    li & {
+      list-style-type: lower-latin;
+      li & {
+        list-style-type: lower-greek;
+        li & {
+          list-style-type: decimal;
+        }
+      }
+    }
+  }
+}
+
+dt + dt::before {
+  content: ", ";
+}
+
+dd {
+  &::before {
+    white-space: pre-wrap;
+    content: " : ";
+    dd + & {
+      content: "″ : ";
+    }
+  }
+  &::after {
+    content: "";
+  }
+}
+
+/*  BLOCK ELEMENTS  */
+
+figcaption {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: left;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h3 {
+  &::before {
+    content: "#";
+  }
+  &::after {
+    content: " :";
+  }
+}
+
+h4 {
+  text-decoration: underline;
+}
+
+hr::after {
+  text-align: center;
+  white-space: pre;
+  content: "*   *   *";
+}
+
+p {
+  h4 + &, h5 + &, h6 + &, p + & {
+    text-indent: 2em;
+    &::before {
+      content: "¶";
+    }
+    footer & {
+      text-indent: 0;
+      &::before {
+        content: none;
+      }
+    }
+  }
+  &::before {
+    text-indent: 0;
+  }
+}
+
+pre {
+  white-space: pre-wrap;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  &::before, &::after {
+    content: "```";
+  }
+}
+
+/*  PHRASING  */
+
+a[href] {
+  text-decoration: none;
+  main & {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+  }
+  nav &, h1 & {
+    text-decoration: none;
+  }
+}
+
+code {
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+del, s {
+  text-decoration: line-through;
+}
+
+em, ins {
+  text-decoration: underline;
+}
+
+i::before, i::after {
+  content: "'"
+}
+
+sup {
+  text-transform: uppercase;
+}
+
+sub {
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+u {
+  text-decoration: none;
+}

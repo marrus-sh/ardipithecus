@@ -1,0 +1,28 @@
+- content_for :header_tags do
+  %meta{ property: 'og:site_name', content: @title }/
+  %meta{ property: 'og:type', content: 'website' }/
+  %meta{ property: 'og:image', content: asset_url('mastodon_small.jpg') }/
+  %meta{ property: 'og:image:width', content: '400' }/
+  %meta{ property: 'og:image:height', content: '400' }/
+  %meta{ property: 'twitter:card', content: 'summary' }/
+  = stylesheet_link_tag 'about', media: 'all'
+
+- content_for :content do
+
+  %header
+    %h1=link_to Setting.site_title, portal_path
+    %nav
+      = link_to t('about.about'), about_path
+      &nbsp;|&nbsp;
+      = link_to t('about.mission'), mission_path
+      &nbsp;|&nbsp;
+      = link_to t('about.principles'), principles_path
+      &nbsp;|&nbsp;
+      = link_to t('about.privacy'), privacy_path
+      &nbsp;|&nbsp;
+      = link_to t('about.terms'), terms_path
+
+  %main
+    %article=yield
+
+= render template: "layouts/application"

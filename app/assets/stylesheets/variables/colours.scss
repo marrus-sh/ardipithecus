@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/*  COLOURS  */
+
+/*
+  The default Ardipithecus palette uses a combination of earth-tones
+  and bright pastels to create a visually stunning experience.
+*/
+
+//  PRINT  //
+
+$print_white: #faf8f7;
+$print_bright: #dedbd9;
+$print_light: #b8b3b0;
+$print: #948d87;
+$print_medium: #75706a;
+$print_dark: #57534c;
+$print_dim: #302f2b;
+$print_black: #1f1a14;
+
+//  PASTELS  //
+
+$pastel_red: #b01c1c;
+$pastel_orange: #d15919;
+$pastel_gold: #eb9100;
+$pastel_yellow: #fae13e;
+$pastel_green: #50d952;
+$pastel_cyan: #1aaceb;
+$pastel_blue: #4b2df7;
+$pastel_pink: #f56e97;
+
+/*
+  This is the "rainbow" palette by kibigo!
+  It's not used by any of the default stylesheets, but you're welcome
+  to use these colours when customizing your own instance---they're
+  guaranteed to always work nicely together!
+*/
+
+//  RED  //
+
+$red: #e83f2c;
+$red_light: #f9a59b;
+$red_dark: #5d2721;
+
+//  YELLOW  //
+
+$yellow: #f6d037;
+$yellow_light: #fcf0be;
+$yellow_dark: #4f420d;
+
+//  GREEN  //
+
+$green: #6ad622;
+$green_light: #d5fcbb;
+$green_dark: #1f4505;
+
+//  CYAN  //
+
+$cyan: #31b9db;
+$cyan_light: #bfe7f2;
+$cyan_dark: #00495c;
+
+//  BLUE  //
+
+$blue: #7476fc;
+$blue_light: #d0d1f6;
+$blue_dark: #383966;
+
+//  PURPLE  //
+
+$purple: #c258f2;
+$purple_light: #eabdff;
+$purple_dark: #4c3159;
+
+//  MAGENTA  //
+
+$magenta: #e63ca4;
+$magenta_light: #f0b2d8;
+$magenta_dark: #592846;
+
+//  GREY  //
+
+$grey_white: #f5f5f5;
+$grey_bright: #cccccc;
+$grey_light: #a3a3a3;
+$grey: #828282;
+$grey_medium: #636363;
+$grey_dark: #3b3b3b;
+$grey_dim: #1c1c1c;
+$grey_black: #0c0c0c;
+
+/*
+  These are the horrifically undescriptive default Mastodon colours.
+  You can use them for that retro masto feel.
+*/
+
+$color1: #282c37; // darkest
+$color2: #d9e1e8; // lightest
+$color3: #9baec8; // lighter
+$color4: #2b90d9; // vibrant
+$color5: #ffffff; // white
+$color6: #df405a; // error red
+$color7: #79bd9a; // succ green
+$color8: #000000; // black

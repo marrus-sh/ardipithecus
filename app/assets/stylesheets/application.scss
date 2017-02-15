@@ -1,7 +1,4 @@
-@import 'variables';
-@import 'fonts/roboto';
-@import 'fonts/roboto-mono';
-@import 'fonts/montserrat';
+@import 'variables/colours';
 @import 'font-awesome';
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -289,6 +286,5 @@ button:focus {
 @import 'accounts';
 @import 'stream_entries';
 @import 'components';
-@import 'about';
 @import 'tables';
 @import 'admin';

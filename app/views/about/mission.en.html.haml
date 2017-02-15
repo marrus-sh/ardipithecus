@@ -1,0 +1,10 @@
+- content_for :page_title do
+  = t 'about.mission'
+
+- content_for :header_tags do
+  %meta{ property: 'og:title', content: t('about.mission') }/
+  %meta{ property: 'og:description', content: "The mission for this instance."}/
+
+%h2=t 'about.mission'
+
+This instance is without mission!

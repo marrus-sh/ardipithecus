@@ -160,9 +160,13 @@ Rails.application.routes.draw do
 
   get '/web/(*any)', to: 'home#index', as: :web
 
+  get '/portal',     to: 'portal#index'
+
   get '/about',      to: 'about#index'
-  get '/about/more', to: 'about#more'
+  get '/mission',    to: 'about#mission'
+  get '/principles', to: 'about#principles'
   get '/terms',      to: 'about#terms'
+  get '/privacy',    to: 'about#privacy'
 
   root 'home#index'
 

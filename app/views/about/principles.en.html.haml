@@ -1,0 +1,10 @@
+- content_for :page_title do
+  = t 'about.principles'
+
+- content_for :header_tags do
+  %meta{ property: 'og:title', content: t('about.principles') }/
+  %meta{ property: 'og:description', content: "The principles for this instance."}/
+
+%h2=t 'about.principles'
+
+This instance is without principle!

@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import '../variables/colours';
+
+/*  PAGE LAYOUT  */
+
+html, body {
+  background: $print_black;
+  color: $print_light;
+}
+
+footer {
+  color: $print;
+}
+
+/*  LISTS  */
+
+dt {
+  color: $print_black;
+  background: $print_light;
+}
+
+/*  BLOCK ELEMENTS  */
+
+blockquote, figcaption, h3::before, hr, p::before {
+  color: $print;
+}
+
+h1, h3, h4, h5, h6 {
+  color: $print_bright;
+}
+
+h2 {
+  color: $print_dim;
+  background: $print_bright;
+  border-color: $print_black;
+}
+
+svg {
+  color: inherit;
+}
+
+pre {
+  color: $print_white;
+  &::before, &::after {
+    color: $print;
+  }
+}
+
+/*  PHRASING  */
+
+a[href] {
+  color: inherit;
+  &:hover {
+    color: $print_bright;
+  }
+  mark &, dt &, mark &:hover, dt &:hover {
+    color: inherit;
+  }
+}
+
+b, i, u {
+  color: $print_bright;
+  mark &, dt &, article mark &, article dt & {
+    color: inherit;
+  }
+}
+
+code {
+  color: $print_white;
+  mark &, dt &, article mark &, article dt & {
+    color: inherit;
+  }
+}
+
+mark {
+  color: $print_black;
+  background: $print_light;
+}
+
+sub {
+  color: $print_bright;
+}

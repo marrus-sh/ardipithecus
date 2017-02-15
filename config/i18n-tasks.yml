@@ -8,7 +8,7 @@ data:
     - config/locales/**/*.%{locale}.yml
 
   write:
-    - ['{devise, simple_form, doorkeeper}.*', 'config/locales/\1.%{locale}.yml']
+    - ['{ardipithecus, devise, simple_form, doorkeeper}.*', 'config/locales/\1.%{locale}.yml']
     - config/locales/%{locale}.yml
 
   yaml:

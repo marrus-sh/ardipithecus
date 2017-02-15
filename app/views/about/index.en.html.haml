@@ -1,0 +1,23 @@
+- content_for :page_title do
+  = t 'about.about'
+
+- content_for :header_tags do
+  %meta{ property: 'og:title', content: t('about.about') }/
+  %meta{ property: 'og:description', content: "Ardipithecus is a fork of Mastodon, a free, open-source social network server. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Anyone can run Ardipithecus and participate in the social network seamlessly."}/
+
+%h2=t 'about.about'
+
+%table{class: 'statistics'}
+  %tr
+    %td
+      %span=t 'about.user_count_before'
+      %b=number_with_delimiter @user_count
+      %span=t 'about.user_count_after'
+    %td
+      %span=t 'about.status_count_before'
+      %b=number_with_delimiter @status_count
+      %span=t 'about.status_count_after'
+    %td
+      %span=t 'about.domain_count_before'
+      %b=number_with_delimiter @domain_count
+      %span=t 'about.domain_count_after'

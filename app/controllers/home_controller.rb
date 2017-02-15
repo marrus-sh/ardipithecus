@@ -12,7 +12,7 @@ class HomeController < ApplicationController
   private
 
   def authenticate_user!
-    redirect_to(Rails.configuration.x.single_user_mode ? account_path(Account.first) : about_path) unless user_signed_in?
+    redirect_to(Rails.configuration.x.single_user_mode ? account_path(Account.first) : portal_path) unless user_signed_in?
   end
 
   def find_or_create_access_token

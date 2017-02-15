@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+/*  GLOBAL RULES  */
+
+*:root:root:root:root:root [hidden] {
+  display: none;
+}
+
+/*  PAGE LAYOUT  */
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: auto;
+  padding: 21pt 24pt;
+  max-width: 465pt;
+}
+
+/*  SECTIONING  */
+
+main {
+  display: block;
+  position: relative;
+  padding-bottom: 84pt;
+}
+
+article, section, aside, header, footer, div {
+  display: block;
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+aside {
+  margin: 10.5pt 0;
+}
+
+footer {
+  margin: 5.25pt 0;
+}
+
+header {
+  margin: 21pt 0 10.5pt;
+  body > & {
+    margin: 42pt -24pt 63pt;
+  }
+}
+
+nav {
+  display: block;
+}
+
+section {
+  margin: 21pt 0;
+}
+
+/*  TABLES  */
+
+caption {
+  margin: 0;
+  padding: 5.25pt 3pt;
+}
+
+table {
+  margin: 21pt auto;
+  border-collapse: separate;
+  padding: 5.25pt 3pt;
+  padding: 0;
+  max-width: 100%;
+  td > &:only-child {
+    margin: auto;
+    width: 100%;
+  }
+}
+
+tbody + tbody::before {
+  display: table-row;
+  height: 21pt;
+  content: "";
+}
+
+td, th {
+  border: none;
+  border-radius: 1.5pt;
+  padding: 1.5pt;
+  vertical-align: top;
+}
+
+/*  LISTS  */
+
+ul, ol, dl {
+  margin: 5.25pt 0;
+  padding: 0 0 0 24pt;
+}
+
+dt {
+  display: inline-block;
+  float: left;
+  margin: 0 -3pt;
+  padding: 0 3pt;
+}
+
+dd {
+  margin: 0 0 5.25pt 24pt;
+  padding: 0;
+  &::before {
+    display: inline;
+  }
+  &::after {
+    display: block;
+    clear: both;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/*  BLOCK ELEMENTS  */
+
+blockquote {
+  margin: 10.5pt 0;
+  padding: 0 12pt 0 10pt;
+  border-left: 2pt currentColor solid;
+}
+
+figcaption {
+  margin: 5.25pt 0;
+}
+
+figure, iframe, img, svg, video {
+  display: block;
+  margin: 0;
+  border: none;
+  padding: 0;
+  max-width: 100%;
+  main > & {
+    margin: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+figure, main figure {
+  margin: 21pt auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  display: inline-block;
+  margin: 0;
+  padding: 21pt 0;
+}
+
+
+h2 {
+  margin: 21pt -48pt;
+  border-bottom: 2pt currentColor solid;
+  padding: 10.5pt 24pt;
+  header > & {
+    margin: 0;
+  }
+}
+
+h3 {
+  margin: 21pt 24pt 10.5pt -24pt;
+  &::before {
+    display: inline-block;
+    width: 24pt;
+  }
+}
+
+h4 {
+  margin: 21pt 0 0;
+}
+
+h5 {
+  margin: 10.5pt 0 0;
+}
+
+h6 {
+  margin: 0;
+}
+
+hr {
+  display: block;
+  position: relative;
+  margin: 0;
+  border: none;
+  padding: 0;
+  width: 100%;
+  height: 63pt;
+  background: none;
+  overflow: hidden;
+  &::after {
+    display: block;
+    position: absolute;
+    top: 21pt;
+    left: 0;
+    right: 0;
+    height: 21pt;
+  }
+}
+
+iframe[src*="//youtube.com/embed/"], iframe[src*="//www.youtube.com/embed/"] {
+  width: 560px;
+  height: 315px;
+}
+
+img.inline, svg.inline {
+  display: inline-block;
+  margin: 0;
+  padding: calc(.25em / 1.5);
+  max-height: calc(1em / 1.5);
+  max-width: calc(1em / 1.5);
+  vertical-align: middle;
+}
+
+p {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  h4 + &, h5 + &, h6 + &, p + & {
+    &::before {
+      position: absolute;
+      top: 0;
+      left: .5em;
+    }
+    footer & {
+      margin-top: 10.5pt;
+    }
+  }
+}
+
+pre {
+  margin: 21pt 12pt;
+  &::before, &::after {
+    display: block;
+    margin: 0 -12pt;
+  }
+}
+
+/*  PHRASING  */
+
+a[href] {
+  transition: color .3s;
+  transition: color .3s, text-decoration-color .3s;
+}
+
+main a[href] {
+  display: inline;
+}
+
+mark {
+  padding: 0 3pt;
+}
