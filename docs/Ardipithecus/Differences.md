@@ -50,7 +50,12 @@ Differences between Ardipithecus and Mastodon
     Conversely, not all of the terms defined in the Mastodon localization files are used.
     (However, these are not removed.)
 
-- **Ardipithecus has vastly different layout and styling.**
+- **Ardipithecus has vastly different layout and styling for about pages.**
     All of the styling is different.
     All of it.
     (And if not, it soon will be.)
+
+- **Ardipithecus doesn't ship with a frontend.**
+    Ardipithecus is only a backend.
+    Frontends should be placed in an assets folder and specified in `.env.production`
+    You can download a copy of the default Mastodon frontend [here](https://github.com/marrus-sh/mastodon-front)

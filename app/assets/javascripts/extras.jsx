@@ -1,4 +1,6 @@
-import emojify from './components/emoji'
+//= require_tree ./extras
+
+import emojify from 'extras/emoji'
 
 $(() => {
   $.each($('.emojify'), (_, content) => {

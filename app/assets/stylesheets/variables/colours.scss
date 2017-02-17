@@ -1,10 +1,18 @@
 @charset "UTF-8";
 
-/*  COLOURS  */
+/*
+  This stylesheet contains a few default colour palettes you can use
+  when customizing your server for a consistent appearance.
+*/
+
+///////////////////////////////////////////////////////////////////////
+
+/*  PRINT + PASTELS  */
+/*  by: Kibigo!      */
 
 /*
-  The default Ardipithecus palette uses a combination of earth-tones
-  and bright pastels to create a visually stunning experience.
+  This theme combines offwhite greys with bright pastels for a faded
+  yet distinctive look.
 */
 
 //  PRINT  //
@@ -29,11 +37,14 @@ $pastel_cyan: #1aaceb;
 $pastel_blue: #4b2df7;
 $pastel_pink: #f56e97;
 
+///////////////////////////////////////////////////////////////////////
+
+/*  rainbow.txt  */
+/*  by: Kibigo!  */
+
 /*
-  This is the "rainbow" palette by kibigo!
-  It's not used by any of the default stylesheets, but you're welcome
-  to use these colours when customizing your own instance---they're
-  guaranteed to always work nicely together!
+  This theme contains eight colours and eight greys. Each colour comes
+  in standard, light, and dark variants.
 */
 
 //  RED  //
@@ -89,9 +100,33 @@ $grey_dark: #3b3b3b;
 $grey_dim: #1c1c1c;
 $grey_black: #0c0c0c;
 
+///////////////////////////////////////////////////////////////////////
+
+/*  MOTHER MINT                  */
+/*  from the Mother video games  */
+
 /*
-  These are the horrifically undescriptive default Mastodon colours.
-  You can use them for that retro masto feel.
+  This palette contains a mint theme inspired by the Mother series of
+  video games.
+*/
+
+$mint00: #000000; // black
+$mint01: #50f0b0; // light
+$mint02: #30c088; // medium
+$mint03: #209868; // dark
+$mint04: #106078; // blue
+$mint05: #78f8d0; // bright
+$mint06: #f8f0e8; // white
+
+///////////////////////////////////////////////////////////////////////
+
+/*  MASTODON     */
+/*  by: Gargron  */
+
+/*
+  This theme contains the original eight-colour palette used by
+  https://mastodon.social. Use it to obtain that old-school Mastodon
+  vibe.
 */
 
 $color1: #282c37; // darkest

@@ -17,6 +17,8 @@ Travis support for Ardipithecus not here yet!!
 It aims to maintain the Mastodon backend and API while presenting a modified user experience.
 Anyone can run Ardipithecus and participate in the social network seamlessly.
 
+**Note that Ardipithecus does not ship with a frontend.**
+
 Because it is a fork with nontrivial modifications, Ardipithecus will run slightly behind Mastodon development at all times.
 The philosophy of Ardipithecus is to provide stable, well-documented updates at regular intevals, which means occasionally introducing a delay before incorporating upstream changes.
 
