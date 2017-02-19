@@ -19,7 +19,8 @@
 
     = yield :header_tags
 
-  - body_attributes ||= @body_attributes
+  - def body_attributes
+    - @body_attributes ? @body_attributes.to_hash : Hash.new
 
   %body{body_attributes}
     = content_for?(:content) ? yield(:content) : yield
