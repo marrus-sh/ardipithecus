@@ -19,7 +19,7 @@
 
     = yield :header_tags
 
-  - body_classes ||= @body_classes
+  - body_attributes ||= @body_attributes
 
-  %body{ class: body_classes }
+  %body{body_attributes}
     = content_for?(:content) ? yield(:content) : yield

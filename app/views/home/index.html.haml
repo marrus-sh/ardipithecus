@@ -9,9 +9,6 @@
     = javascript_include_tag "#{Rails.configuration.x.frontend_default}"
     = stylesheet_link_tag "#{Rails.configuration.x.frontend_default}", media: 'all'
 
-
-  = react_component 'Mastodon', default_props, class: 'app-holder', prerender: false
-
 - else
 
   - content_for :header_tags do

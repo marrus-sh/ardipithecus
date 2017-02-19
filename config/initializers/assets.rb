@@ -2,11 +2,15 @@
 
 # Adds support for Literate CoffeeScript & Literate CoffeeScript + ERB
 
-ActiveSupport::Deprecation.silence do
-  Sprockets.register_mime_type 'text/literate-coffeescript', extensions: ['.litcoffee', '.coffee.md']
-  Sprockets.register_preprocessor 'text/literate-coffeescript', Tilt::CoffeeScriptLiterateTemplate
-  Sprockets.register_mime_type 'application/x-erb', extensions: ['.litcoffee.erb', '.coffee.md.erb']
+module LitCoffeeTransformer
+  def self.call(input)
+    tilter = Tilt::CoffeeScriptLiterateTemplate.new input[:filename], input[:data]
+    {data: tilter.render}
+  end
 end
+Sprockets.register_mime_type 'text/literate-coffeescript', extensions: ['.litcoffee', '.coffee.md']
+Sprockets.register_transformer 'text/literate-coffeescript', 'application/javascript', LitCoffeeTransformer
+Sprockets.register_mime_type 'application/x-erb', extensions: ['.litcoffee.erb', '.coffee.md.erb']
 
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'

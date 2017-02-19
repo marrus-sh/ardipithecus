@@ -15,4 +15,4 @@
         %h2= yield :page_title
         = yield
 
-= render template: "layouts/application", locals: { body_classes: 'admin' }
+= render template: "layouts/application", locals: { body_attributes: {class: "admin"} }
