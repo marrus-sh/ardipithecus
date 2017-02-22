@@ -7,7 +7,9 @@
       window.INITIAL_STATE = #{json_escape(render(file: 'home/initial_state', formats: :json))}
 
     = javascript_include_tag "#{Rails.configuration.x.frontend_default}"
-    = stylesheet_link_tag "#{Rails.configuration.x.frontend_default}", media: 'all'
+    = stylesheet_link_tag "#{Rails.configuration.x.frontend_default}", media: "all"
+
+  #frontend
 
 - else
 

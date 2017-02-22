@@ -158,7 +158,7 @@ Rails.application.routes.draw do
     end
   end
 
-  get '/web/(*any)', to: 'home#index', as: :web
+  get '/go/(*any)', to: 'home#index', as: :web
 
   get '/portal',     to: 'portal#index'
 

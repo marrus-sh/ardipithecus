@@ -22,6 +22,7 @@ Rails.application.config.assets.version = '1.0'
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 Rails.application.config.assets.precompile += %w(application_public.js)
 Rails.application.config.assets.precompile += %w(about.css)
+Rails.application.config.assets.precompile += %w(depreciated.css)
 
 # Frontend assets
 if ENV['FRONTEND'] and not ENV['FRONTEND'].empty?
