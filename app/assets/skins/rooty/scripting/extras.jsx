@@ -39,10 +39,11 @@ $(() => {
   });
 
   // used on /settings/profile
+  // MAX_CHARS should be set to Rails.config.x.max_chars
   $('.account_display_name').on('input', e => {
     $('.name-counter').text(30 - $(e.target).val().length)
   });
   $('.account_note').on('input', e => {
-    $('.note-counter').text({Rails.config.x.max_chars} - $(e.target).val().length)
+    $('.note-counter').text(typeof MAX_CHARS !== "undefined" ? MAX_CHARS - $(e.target).val().length : '???')
   });
 });

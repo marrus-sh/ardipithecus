@@ -25,7 +25,7 @@ class Account < ApplicationRecord
 
   # Local user profile validations
   validates :display_name, length: { maximum: 30 }, if: 'local?'
-  validates :note, length: { maximum: {Rails.config.x.max_chars} }, if: 'local?'
+  validates :note, length: { maximum: Rails.application.config.x.max_chars }, if: 'local?'
 
   # Timelines
   has_many :stream_entries, inverse_of: :account, dependent: :destroy
