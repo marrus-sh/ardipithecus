@@ -43,6 +43,6 @@ $(() => {
     $('.name-counter').text(30 - $(e.target).val().length)
   });
   $('.account_note').on('input', e => {
-    $('.note-counter').text(160 - $(e.target).val().length)
+    $('.note-counter').text({Rails.x.config.max_length}0 - $(e.target).val().length)
   });
 });
