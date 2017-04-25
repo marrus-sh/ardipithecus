@@ -6,7 +6,7 @@
 
   .fields-group
     = f.input :display_name, placeholder: t('simple_form.labels.defaults.display_name'), hint: t('simple_form.hints.defaults.display_name', counter: "<span class=\"name-counter\">#{30-@account.display_name.size}</span>").html_safe
-    = f.input :note, placeholder: t('simple_form.labels.defaults.note'), hint: t('simple_form.hints.defaults.note', counter: "<span class=\"note-counter\">#{{Rails.x.config.max_length}-@account.note.size}</span>").html_safe
+    = f.input :note, placeholder: t('simple_form.labels.defaults.note'), hint: t('simple_form.hints.defaults.note', counter: "<span class=\"note-counter\">#{{Rails.config.x.max_chars}-@account.note.size}</span>").html_safe
     = f.input :avatar, wrapper: :with_label, hint: t('simple_form.hints.defaults.avatar')
     = f.input :header, wrapper: :with_label, hint: t('simple_form.hints.defaults.header')
 
